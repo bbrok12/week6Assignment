@@ -8,6 +8,7 @@ import GraphicsLayer from "https://js.arcgis.com/5.1/@arcgis/core/layers/Graphic
 import ElevationLayer from "https://js.arcgis.com/5.1/@arcgis/core/layers/ElevationLayer.js";
 import SceneView from "https://js.arcgis.com/5.1/@arcgis/core/views/SceneView.js";
 import DefaultUI from "https://js.arcgis.com/5.1/@arcgis/core/views/ui/DefaultUI.js";
+import MapView from "https://js.arcgis.com/5.1/@arcgis/core/views/MapView.js";
 
 Main = (function () {
     const layer = new ElevationLayer({
@@ -77,7 +78,7 @@ Main = (function () {
         });
 
 
-        // toDO alter the symbology of the point symbols changed outline coloer
+        // toDO alter the symbology of the point symbols changed outline color
         // toDO alter the popup template
         // toDO add a function to zoom to the point when the popup is clicked
         // create a clusturing efect for point symbols when they are near eachother there is no native clustering in the arcgis api for javascript 5.1 so you will have to implement your own clustering algorithm
@@ -107,6 +108,7 @@ Main = (function () {
                 }
             };
 
+
             //altered the popup per project requirements
             const pointGraphic = new Graphic({
                 geometry: point,
@@ -114,11 +116,12 @@ Main = (function () {
                 popupTemplate: {
                     title: key,
                     content: "<br><b> this is the city: </b>" + value.city + "<br><b> this is the country: </b>" + value.country
-                }
+                },
 
             });
 
             graphicsLayer.add(pointGraphic);
+
 
 
         }
