@@ -1,8 +1,10 @@
+//customized my stuff per project requirements.
 var myStuff = {
-    "Graduate School": {city: "Fairbanks", state: "Alaska", "coord": [-147.776749, 64.835365] },
-    "Postdoc Place": {city: "Miami", state: "Florida", "coord": [-80.191788, 25.761681]},
-    "Current Residence": {city: "Laramie", state: "Wyoming", "coord": [-105.502, 41.3104]},
-    "Favorite Vacation": {city: "San Diego", state: "California", "coord": [-117.161087, 32.715736] }
+    "I went school": {city: "Laramie", country: "United States", "coord": [-105.5911, 41.31137] },
+    "This is a close point to test clustering functionality": {city: "Laramie", country: "United States", "coord": [-105.5911, 41.31137] },
+    "This a Places I have deployed": {city: "Baghdad", country: "Iraq", "coord": [33.306171, 44.387222]},
+    "Other place I have deployed": {city: "Khandar", country: "Afghanistan", "coord": [65.836238, 31.515976]},
+    "Favorite Vacation": {city: "Puerto Limon", country: "Costa Rica", "coord": [-82.755699, 9.65531] }
 }
 
-
+31.515976, 65.836238
